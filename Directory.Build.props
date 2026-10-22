@@ -2,18 +2,11 @@
 
   <PropertyGroup>
     <!--
-      Arch's dotnet-sdk 10 package does not ship the net10.0 prune/targeting-pack data,
-      which makes the SDK fail with NETSDK1226 before compiling. Installing
-      `dotnet-targeting-pack-10.0` fixes this properly; until then, skip the check.
+      Arch's dotnet-sdk 10 package does not ship the ASP.NET Core targeting-pack data
+      used for package pruning, so the Web project fails with NETSDK1226. Installing
+      `aspnet-targeting-pack` fixes this properly; until then, skip the check.
     -->
     <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData>
-
-    <!--
-      The apphost pack for linux-arch-x64 is not published to NuGet, so executable
-      projects cannot resolve it on this machine. Framework-dependent output still
-      runs via `dotnet <app>.dll` (and `dotnet run`).
-    -->
-    <UseAppHost>false</UseAppHost>
   </PropertyGroup>
 
 </Project>

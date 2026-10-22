@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace StoreBackend.Api.Models.Requests;
 
-public class CreateProductRequests
+public class CreateProductRequestModel
 {
     [Required]
     public Guid? ProductResourceId { get; set; }

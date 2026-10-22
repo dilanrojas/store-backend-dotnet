@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using StoreBackend.Api.Mappers
+using StoreBackend.Api.Mappers;
 using StoreBackend.Api.Models.Requests;
 using StoreBackend.Exceptions;
 using StoreBackend.Facade;
@@ -17,37 +17,37 @@ namespace StoreBackend.Api.Controllers
         {
             this.productFacade = productFacade;
         }
-    };
 
-    [HttpGet]
-    public async Task<IActionResult> GetProducts()
-    {
-        var products = await productFacade.GetAllAsync();
-        var models = ProductMapper.ToModel(products);
-        return Ok(models);
-    };
-
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetProduct(Guid id)
-    {
-        try
+        [HttpGet]
+        public async Task<IActionResult> GetProducts()
         {
-            var product = await productFacade.GetByIdAsync(id);
-            var model = ProductMapper.ToModel(product);
-            return Ok(model);
+            var products = await productFacade.GetAllAsync();
+            var models = ProductMapper.ToModel(products);
+            return Ok(models);
         }
-        catch (ResourceNotFoundException)
-        {
-            return NotFound();
-        }
-    };
 
-    [HttpPost]
-    public async Task<IActionResult> CreateProduct([FromBody] CreateProductRequestModel model)
-    {
-        var productDto = ProductMapper.ToDto(model);
-        var createdProduct = await productFacade.AddAsync(productDto);
-        var responseModel = ProductMapper.ToModel(createdProduct);
-        return CreatedAtAction(nameof(GetProduct), new { id = responseModel.ProductResourceId }, responseModel);
-    };
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProduct(Guid id)
+        {
+            try
+            {
+                var product = await productFacade.GetByIdAsync(id);
+                var model = ProductMapper.ToModel(product);
+                return Ok(model);
+            }
+            catch (ResourceNotFoundException)
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateProduct([FromBody] CreateProductRequestModel model)
+        {
+            var productDto = ProductMapper.ToDto(model);
+            var createdProduct = await productFacade.AddAsync(productDto);
+            var responseModel = ProductMapper.ToModel(createdProduct);
+            return CreatedAtAction(nameof(GetProduct), new { id = responseModel.ProductResourceId }, responseModel);
+        }
+    }
 }
