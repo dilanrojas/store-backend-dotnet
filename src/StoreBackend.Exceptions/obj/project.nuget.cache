@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HN5eaR8+ywk=",
+  "dgSpecHash": "gWkIx6TZqdg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\daniu\\Desktop\\Universidad\\Segundo año\\desarrollo-back-end-SWIV\\StoreBackend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/jwd/Documents/dev/StoreBackend/src/StoreBackend.Exceptions/StoreBackend.Exceptions.csproj",
+  "expectedPackageFiles": [
+    "/home/jwd/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.13/microsoft.aspnetcore.app.ref.10.0.13.nupkg.sha512"
+  ],
   "logs": []
 }

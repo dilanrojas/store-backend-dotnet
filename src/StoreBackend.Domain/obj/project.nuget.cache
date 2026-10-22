@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "I9pePr8/Oi8=",
+  "dgSpecHash": "FbCnl+V42lE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\daniu\\Desktop\\Universidad\\Segundo año\\desarrollo-back-end-SWIV\\StoreBackend\\src\\StoreBackend.Domain\\StoreBackend.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/jwd/Documents/dev/StoreBackend/src/StoreBackend.Domain/StoreBackend.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/jwd/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.13/microsoft.aspnetcore.app.ref.10.0.13.nupkg.sha512"
+  ],
   "logs": []
 }
