@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FbCnl+V42lE=",
+  "dgSpecHash": "arS0LQNGTNc=",
   "success": true,
   "projectFilePath": "/home/jwd/Documents/dev/StoreBackend/src/StoreBackend.Domain/StoreBackend.Domain.csproj",
   "expectedPackageFiles": [
-    "/home/jwd/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.13/microsoft.aspnetcore.app.ref.10.0.13.nupkg.sha512"
+    "/home/jwd/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.14/microsoft.aspnetcore.app.ref.10.0.14.nupkg.sha512"
   ],
   "logs": []
 }

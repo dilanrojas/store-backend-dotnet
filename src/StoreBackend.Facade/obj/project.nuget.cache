@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VyK/tTszZiw=",
+  "dgSpecHash": "UTc9U8AggpM=",
   "success": true,
   "projectFilePath": "/home/jwd/Documents/dev/StoreBackend/src/StoreBackend.Facade/StoreBackend.Facade.csproj",
   "expectedPackageFiles": [
@@ -61,7 +61,7 @@
     "/home/jwd/.nuget/packages/system.memory.data/8.0.1/system.memory.data.8.0.1.nupkg.sha512",
     "/home/jwd/.nuget/packages/system.security.cryptography.pkcs/10.0.13/system.security.cryptography.pkcs.10.0.13.nupkg.sha512",
     "/home/jwd/.nuget/packages/system.security.cryptography.protecteddata/9.0.4/system.security.cryptography.protecteddata.9.0.4.nupkg.sha512",
-    "/home/jwd/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.13/microsoft.aspnetcore.app.ref.10.0.13.nupkg.sha512"
+    "/home/jwd/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.14/microsoft.aspnetcore.app.ref.10.0.14.nupkg.sha512"
   ],
   "logs": []
 }
