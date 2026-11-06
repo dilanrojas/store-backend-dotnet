@@ -28,6 +28,13 @@ public class ProductFacade : IProductFacade
     }
 
 
+    public async Task<ProductDto> UpdateAsync(Guid productId, string name)
+    {
+        var entity = await productService.UpdateAsync(productId, name);
+        await context.SaveChangesAsync();
+        return ProductMapper.ToDto(entity);
+    }
+
     public async Task DeleteAsync(Guid productId)
     {
         await productService.DeleteAsync(productId);

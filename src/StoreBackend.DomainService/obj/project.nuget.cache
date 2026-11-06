@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tfebbl8+UJ0=",
+  "dgSpecHash": "QZLxseLfbk0=",
   "success": true,
   "projectFilePath": "/home/jwd/Documents/dev/StoreBackend/src/StoreBackend.DomainService/StoreBackend.DomainService.csproj",
   "expectedPackageFiles": [
@@ -60,8 +60,7 @@
     "/home/jwd/.nuget/packages/system.identitymodel.tokens.jwt/7.7.1/system.identitymodel.tokens.jwt.7.7.1.nupkg.sha512",
     "/home/jwd/.nuget/packages/system.memory.data/8.0.1/system.memory.data.8.0.1.nupkg.sha512",
     "/home/jwd/.nuget/packages/system.security.cryptography.pkcs/10.0.13/system.security.cryptography.pkcs.10.0.13.nupkg.sha512",
-    "/home/jwd/.nuget/packages/system.security.cryptography.protecteddata/9.0.4/system.security.cryptography.protecteddata.9.0.4.nupkg.sha512",
-    "/home/jwd/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.14/microsoft.aspnetcore.app.ref.10.0.14.nupkg.sha512"
+    "/home/jwd/.nuget/packages/system.security.cryptography.protecteddata/9.0.4/system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }

@@ -37,6 +37,17 @@ public class ProductService : IProductService
         return _productRepository.AddAsync(productEntity);
     }
 
+    public async Task<Product> UpdateAsync(Guid productId, string name)
+    {
+        var product = await _productRepository.GetByIdAsync(productId);
+
+        if (product == null)
+            throw new ResourceNotFoundException();
+
+        product.Name = name;
+        return await _productRepository.UpdateAsync(product);
+    }
+
     public async Task DeleteAsync(Guid productId)
     {
         var product = await _productRepository.GetByIdAsync(productId);
